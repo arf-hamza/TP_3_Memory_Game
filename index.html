@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ma première page web</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="script.js" defer></script>
+</head> 
+
+<body>
+    <header>
+        
+    </header>
+    
+    <h1> Jeu de Memoire </h1>
+    
+    
+    
+    <div class="container">
+        
+        <form method="get" id="formulaire">
+            <fieldset>
+                
+                <legend>Remplir les cases</legend>
+                
+                <label for="inpNom">Votre nom :</label>
+                <input type="text" id="inpNom" name="txtNom">
+                <p id="erreur-nom" class="invalide"></p>
+                
+                <label for="nombrePaire">Nombre de paires :</label>
+                <input type="number" name="nombrePaire" min="0" id="nombrePaire">
+                <p id="erreur-nombrePaire" class="invalide"></p>
+                
+                <input type="submit" value="Go" checked>
+                
+            </fieldset>
+            
+        </form>
+        
+        <div id="jeu">
+            <div id="timer">
+                <span id="minutes">05</span>:<span id="seconds">00</span>
+            </div>
+        </div>
+        <div class="button">
+            <p id="resultatJeu"></p>
+            <button id="boutonRecommencer">Recommencer</button>
+        </div>
+        
+    </div>
+    
+</body>
+
+</html>
